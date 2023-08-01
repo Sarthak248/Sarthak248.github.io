@@ -4,12 +4,19 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
+
+
+  min-height: 100vh;
+  /* Additional styles for the link */
+  scroll-behavior: smooth;
 }
 
 nav {
   background-color: #333;
   color: #fff;
   padding: 10px;
+  display: flex; /* Added to use flexbox */
+  justify-content: flex-end; /* Move the nav bar to the right */
 }
 
 nav ul {
@@ -34,6 +41,16 @@ nav ul li a {
   padding: 20px;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /*text-align: center;  Center align the contents of the container */
+}
+
+.name-title{
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center align the contents of the container */
 }
 
 .container h1 {
@@ -78,5 +95,35 @@ button {
 }
 
 button:hover {
+  background-color: #555;
+}
+
+/* Additional Styles */
+.name-title {
+  margin-bottom: 20px;
+}
+
+.toc{
+ /**/ 
+}
+
+/* Styles for the "Back to Top" link */
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  /*display: none;*/
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  line-height: 40px;
+  text-decoration: none;
+} 
+
+#back-to-top:hover {
   background-color: #555;
 }
