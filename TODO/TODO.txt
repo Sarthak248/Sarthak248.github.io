@@ -1,3 +1,3 @@
 TODO:
-Fix the back to top scroll speed
-For each project have a more... functionality that keeps most of the content hidden until clicked
+-For each project have a more... functionality that keeps most of the content hidden until clicked
+-Nice animation for when circle cursor reaches a link or button

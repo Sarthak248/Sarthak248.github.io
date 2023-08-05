@@ -2,36 +2,68 @@
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  font-family: 'Trebuchet MS', sans-serif;
+  background: rgb(254,253,228);
+background: -moz-linear-gradient(90deg, rgba(254,253,228,1) 100%, rgba(255,255,255,1) 100%);
+background: -webkit-linear-gradient(90deg, rgba(254,253,228,1) 100%, rgba(255,255,255,1) 100%);
+background: linear-gradient(90deg, rgba(254,253,228,1) 100%, rgba(255,255,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fefde4",endColorstr="#ffffff",GradientType=1);
 
+
+  cursor: none;
 
   min-height: 100vh;
   /* Additional styles for the link */
   scroll-behavior: smooth;
 }
-
-nav {
-  background-color: #333;
+ 
+.nav-link {
+  font-size: 25px;
+  position: relative;
+  text-decoration: none;
+ background: rgb(253,255,237);
+background: -moz-linear-gradient(90deg, rgba(253,255,237,1) 100%, rgba(253,255,237,1) 100%);
+background: -webkit-linear-gradient(90deg, rgba(253,255,237,1) 100%, rgba(253,255,237,1) 100%);
+background: linear-gradient(90deg, rgba(253,255,237,1) 100%, rgba(253,255,237,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fdffed",endColorstr="#fdffed",GradientType=1);
   color: #fff;
   padding: 10px;
+  overflow: hidden;
   display: flex; /* Added to use flexbox */
   justify-content: flex-end; /* Move the nav bar to the right */
 }
 
-nav ul {
+.nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  transform-origin: left;
+  transition: width 0.3s;
+}
+
+.nav-link:hover::before {
+  visibility: visible;
+  width: 100%;
+}
+
+.nav-link-ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-nav ul li {
+.nav-link-ul li {
   display: inline;
   margin-right: 20px;
 }
 
-nav ul li a {
-  color: #fff;
+.nav-link-ul li a {
+  border-bottom: 3px solid transparent;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -39,16 +71,29 @@ nav ul li a {
   max-width: 800px;
   margin: 50px auto;
   padding: 20px;
-  background-color: #fff;
+  background: rgb(253,255,237);
+background: -moz-linear-gradient(90deg, rgba(253,255,237,1) 100%, rgba(253,255,237,1) 100%);
+background: -webkit-linear-gradient(90deg, rgba(253,255,237,1) 100%, rgba(253,255,237,1) 100%);
+background: linear-gradient(90deg, rgba(253,255,237,1) 100%, rgba(253,255,237,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fdffed",endColorstr="#fdffed",GradientType=1);
+
+
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   /*text-align: center;  Center align the contents of the container */
 }
 
 .name-title{
+  font-size: 20px;
   max-width: 800px;
   margin: 50px auto;
   padding: 20px;
-  background-color: #fff;
+  
+  background: rgb(254,253,228);
+background: -moz-linear-gradient(90deg, rgba(254,253,228,1) 100%, rgba(255,255,255,1) 100%);
+background: -webkit-linear-gradient(90deg, rgba(254,253,228,1) 100%, rgba(255,255,255,1) 100%);
+background: linear-gradient(90deg, rgba(254,253,228,1) 100%, rgba(255,255,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fefde4",endColorstr="#ffffff",GradientType=1);
+
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center; /* Center align the contents of the container */
 }
@@ -110,9 +155,8 @@ button:hover {
 /* Styles for the "Back to Top" link */
 #back-to-top {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  /*display: none;*/
+  bottom: 5vh; /* Adjust the vertical position based on the device height */
+  right: 5vw; /* Adjust the horizontal position based on the device width */
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -122,8 +166,100 @@ button:hover {
   font-size: 24px;
   line-height: 40px;
   text-decoration: none;
+  display: flex; /* Use flexbox to center the content horizontally and vertically */
+  justify-content: center;
+  align-items: center;
 } 
+
 
 #back-to-top:hover {
   background-color: #555;
+}
+
+.project-title{
+  /*font-family: 'Trebuchet MS', sans-serif;*/
+}
+
+.cursor {
+  position: fixed;
+  z-index: 9999;
+  background: #2696E8;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  pointer-events: none;
+  box-shadow: 0 0 20px #2696E8,
+              0 0 60px #2696E8,
+              0 0 100px #2696E8;
+  animation: colors 5s infinite;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+@keyframes colors {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.cursor:before {
+  content: '';
+  position: absolute;
+  background: #2696E8;
+  width: 50px;
+  height: 50px;
+  opacity: 0.2;
+  transform: translate(-30%, -30%);
+  border-radius: 50%;
+}
+
+.tech-stack{
+  font-size: 20px;
+  /*list-style-type: none*/
+}
+
+/* Your existing CSS styles */
+
+/* Dark Mode Toggle Button */
+.dark-mode-toggle {
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+  /* Added styles to make the toggle button more prominent */
+  width: 60px;
+  height: 40px;
+  background-color: #ccc;
+  border-radius: 40px;
+}
+
+.dark-mode-toggle input[type="checkbox"] {
+  display: none;
+}
+
+.dark-mode-slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 34px;
+  top: 4px; /* Adjust the position to align the toggle button vertically */
+  left: 4px; /* Adjust the position to align the toggle button horizontally */
+  width: 26px; /* Added width to the slider for better visibility */
+  height: 26px; /* Added height to the slider for better visibility */
+  transition: 0.4s;
+}
+
+.dark-mode-toggle input[type="checkbox"]:checked + .dark-mode-slider {
+  background-color: #2196F3;
+  /* Added a box-shadow to make the slider stand out */
+  box-shadow: 0 0 8px rgba(33, 150, 243, 0.5);
+}
+
+.dark-mode-toggle input[type="checkbox"]:checked + .dark-mode-slider:before {
+  /* Adjusted the translation to keep the slider centered */
+  transform: translateX(30px);
 }

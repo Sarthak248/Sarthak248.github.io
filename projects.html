@@ -6,35 +6,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio - Projects</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js"></script>
 </head>
 
 <body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact Me</a></li>
+  <div class="cursor" id="cursor"></div>
+  <nav class="nav-link">
+    <ul class="nav-link-ul">
+      <li><a href="index.html" class="nav-link-a">Home</a></li>
+      <li><a href="projects.html" class="nav-link-a">Projects</a></li>
+      <li><a href="contact.html" class="nav-link-a">Contact Me</a></li>
     </ul>
   </nav>
 
-  <a href="#" id="back-to-top" title="Back to Top">↑</a>
+  <a href="#" id="back-to-top" title="Back to Top">&#8673;</a>
 
   <div class="container">
-    <h1>Recent Projects</h1>
+    <h1 class="project-title">Recent Projects</h1>
     <div class="toc">
       <ul>
-        <li><a href="#enterprise" style="text-decoration: none">Enterprise Management System</a></li>
-        <li><a href="#project1" style="text-decoration: none">Delhi Metro - Shortest Route Finder</a></li>
-        <li><a href="#project2" style="text-decoration: none">Web Scraping Prototype - Zivame.com</a></li>
-        <li><a href="#project2" style="text-decoration: none">Deutsch101.ca - German Classes Website</a></li>
-        <li><a href="#project2" style="text-decoration: none">Sudoku Solver</a></li>
-        <li><a href="#project1" style="text-decoration: none">Wordle Solver</a></li>      
-        <li><a href="#project1" style="text-decoration: none">Calculator.js</a></li>
-        <li><a href="#project2" style="text-decoration: none">Epic Route Solutions - Website for a Marketing company</a></li>
+        <li><a href="#enterprise" style="text-decoration: none" class="project-link">Enterprise Management System</a></li>
+        <li><a href="#delhi" style="text-decoration: none" class="project-link">Delhi Metro - Shortest Route Finder</a></li>
+        <li><a href="#zivame" style="text-decoration: none" class="project-link">Web Scraping Prototype - Zivame.com</a></li>
+        <li><a href="#deutsch" style="text-decoration: none" class="project-link">Deutsch101.ca - German Classes Website</a></li>
+        <li><a href="#sudoku" style="text-decoration: none" class="project-link">Sudoku Solver</a></li>
+        <li><a href="#wordle" style="text-decoration: none" class="project-link">Wordle Solver</a></li>      
+        <li><a href="#calculator" style="text-decoration: none" class="project-link">Calculator.js</a></li>
+        <li><a href="#epicroute" style="text-decoration: none" class="project-link" >Epic Route Solutions - Website for a Marketing company</a></li>
       </ul>
     </div> 
-    <div class="project-section" id="enterprise">
+    <div class="enterprise-section" id="enterprise">
       <h2>Enterprise Management System</h2>
       <p>A spring boot project that serves as a robust Enterprise Management System, providing RESTful APIs to perform CRUD operations.</p>
       <p>Built with ORM tools like Hibernate and JPA, used JWT and Auth 2.0 for authentication, JDBC connection with MySQL.</p>
@@ -55,35 +55,169 @@
         <!-- You can add more content, such as more images or descriptions, here -->
       </div>
     </div>
-    <div class="project-section" id="project2">
+
+
+    <div class="delhi-section" id="delhi">
       <h2>Delhi Metro - Shortest Route Finder</h2>
-      <p>Description of Project 2.</p>
+      <p>A spring boot project that serves as a robust Enterprise Management System, providing RESTful APIs to perform CRUD operations.</p>
+      <p>Built with ORM tools like Hibernate and JPA, used JWT and Auth 2.0 for authentication, JDBC connection with MySQL.</p>
+      <p>The project thoroughly uses the Controller, Service, DAO and DTO architecture.</p>
+      <p>Includes functionalities like Security and Authentication, Data Validation, Exception Handling, Custom Responses for API clients like Postman and Browsers, ManyToOne and OneToMany mapping of entities, Pagination and Sorting and more...</p>
+
+      <div class="delhi-details">
+        <img src="delhi1.jpg" alt="Delhi Image 1" />
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <img src="delhi2.jpg" alt="Delhi Image 2" />
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <!-- You can add more content, such as more images or descriptions, here -->
+      </div>
     </div>
-    <div class="project-section" id="project1">
-      <h2>Web Scraping Prototype - Zivame.com</h2>
-      <p>Description of Project 1.</p>
+
+
+    <div class="zivame-section" id="zivame">
+      <h2>Enterprise Management System</h2>
+      <p>A spring boot project that serves as a robust Enterprise Management System, providing RESTful APIs to perform CRUD operations.</p>
+      <p>Built with ORM tools like Hibernate and JPA, used JWT and Auth 2.0 for authentication, JDBC connection with MySQL.</p>
+      <p>The project thoroughly uses the Controller, Service, DAO and DTO architecture.</p>
+      <p>Includes functionalities like Security and Authentication, Data Validation, Exception Handling, Custom Responses for API clients like Postman and Browsers, ManyToOne and OneToMany mapping of entities, Pagination and Sorting and more...</p>
+
+      <div class="zivame-details">
+        <img src="enterprise1.jpg" alt="Enterprise Image 1" />
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <img src="enterprise2.jpg" alt="Enterprise Image 2" />
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <!-- You can add more content, such as more images or descriptions, here -->
+      </div>
     </div>
-    <div class="project-section" id="project2">
-      <h2>Deutsch101.ca - German Classes Website</h2>
-      <p>Description of Project 2.</p>
+
+
+    <div class="deutsch-section" id="deutsch">
+      <h2>Enterprise Management System</h2>
+      <p>A spring boot project that serves as a robust Enterprise Management System, providing RESTful APIs to perform CRUD operations.</p>
+      <p>Built with ORM tools like Hibernate and JPA, used JWT and Auth 2.0 for authentication, JDBC connection with MySQL.</p>
+      <p>The project thoroughly uses the Controller, Service, DAO and DTO architecture.</p>
+      <p>Includes functionalities like Security and Authentication, Data Validation, Exception Handling, Custom Responses for API clients like Postman and Browsers, ManyToOne and OneToMany mapping of entities, Pagination and Sorting and more...</p>
+
+      <div class="deutsch-details">
+        <img src="enterprise1.jpg" alt="Enterprise Image 1" />
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <img src="enterprise2.jpg" alt="Enterprise Image 2" />
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <!-- You can add more content, such as more images or descriptions, here -->
+      </div>
     </div>
-    <div class="project-section" id="project1">
-      <h2>Sudoku Solver</h2>
-      <p>Description of Project 1.</p>
+
+
+    <div class="sudoku-section" id="sudoku">
+      <h2>Enterprise Management System</h2>
+      <p>A spring boot project that serves as a robust Enterprise Management System, providing RESTful APIs to perform CRUD operations.</p>
+      <p>Built with ORM tools like Hibernate and JPA, used JWT and Auth 2.0 for authentication, JDBC connection with MySQL.</p>
+      <p>The project thoroughly uses the Controller, Service, DAO and DTO architecture.</p>
+      <p>Includes functionalities like Security and Authentication, Data Validation, Exception Handling, Custom Responses for API clients like Postman and Browsers, ManyToOne and OneToMany mapping of entities, Pagination and Sorting and more...</p>
+
+      <div class="sudoku-details">
+        <img src="enterprise1.jpg" alt="Enterprise Image 1" />
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <img src="enterprise2.jpg" alt="Enterprise Image 2" />
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <!-- You can add more content, such as more images or descriptions, here -->
+      </div>
     </div>
-    <div class="project-section" id="project2">
-      <h2>Wordle Solver</h2>
-      <p>Description of Project 2.</p>
+
+
+    <div class="wordle-section" id="wordle">
+      <h2>Enterprise Management System</h2>
+      <p>A spring boot project that serves as a robust Enterprise Management System, providing RESTful APIs to perform CRUD operations.</p>
+      <p>Built with ORM tools like Hibernate and JPA, used JWT and Auth 2.0 for authentication, JDBC connection with MySQL.</p>
+      <p>The project thoroughly uses the Controller, Service, DAO and DTO architecture.</p>
+      <p>Includes functionalities like Security and Authentication, Data Validation, Exception Handling, Custom Responses for API clients like Postman and Browsers, ManyToOne and OneToMany mapping of entities, Pagination and Sorting and more...</p>
+
+      <div class="wordle-details">
+        <img src="enterprise1.jpg" alt="Enterprise Image 1" />
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <img src="enterprise2.jpg" alt="Enterprise Image 2" />
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <!-- You can add more content, such as more images or descriptions, here -->
+      </div>
     </div>
-    <div class="project-section" id="project2">
-      <h2>Calculator.js</h2>
-      <p>Description of Project 2.</p>
+
+
+    <div class="calculator-section" id="calculator">
+      <h2>Enterprise Management System</h2>
+      <p>A spring boot project that serves as a robust Enterprise Management System, providing RESTful APIs to perform CRUD operations.</p>
+      <p>Built with ORM tools like Hibernate and JPA, used JWT and Auth 2.0 for authentication, JDBC connection with MySQL.</p>
+      <p>The project thoroughly uses the Controller, Service, DAO and DTO architecture.</p>
+      <p>Includes functionalities like Security and Authentication, Data Validation, Exception Handling, Custom Responses for API clients like Postman and Browsers, ManyToOne and OneToMany mapping of entities, Pagination and Sorting and more...</p>
+
+      <div class="calculator-details">
+        <img src="enterprise1.jpg" alt="Enterprise Image 1" />
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <img src="enterprise2.jpg" alt="Enterprise Image 2" />
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <!-- You can add more content, such as more images or descriptions, here -->
+      </div>
     </div>
-    <div class="project-section" id="project2">
-      <h2>Epic Route Solutions - Website for a Marketing company</h2>
-      <p>Description of Project 2.</p>
+
+
+    <div class="epicroute-section" id="epicroute">
+      <h2>Enterprise Management System</h2>
+      <p>A spring boot project that serves as a robust Enterprise Management System, providing RESTful APIs to perform CRUD operations.</p>
+      <p>Built with ORM tools like Hibernate and JPA, used JWT and Auth 2.0 for authentication, JDBC connection with MySQL.</p>
+      <p>The project thoroughly uses the Controller, Service, DAO and DTO architecture.</p>
+      <p>Includes functionalities like Security and Authentication, Data Validation, Exception Handling, Custom Responses for API clients like Postman and Browsers, ManyToOne and OneToMany mapping of entities, Pagination and Sorting and more...</p>
+
+      <div class="epicroute-details">
+        <img src="enterprise1.jpg" alt="Enterprise Image 1" />
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <img src="enterprise2.jpg" alt="Enterprise Image 2" />
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <!-- You can add more content, such as more images or descriptions, here -->
+      </div>
     </div>
   </div>
+  <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
