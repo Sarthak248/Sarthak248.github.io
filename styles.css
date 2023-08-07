@@ -3,11 +3,11 @@
 body {
   margin: 0;
   font-family: 'Trebuchet MS', sans-serif;
-  background: rgb(254,253,228);
-background: -moz-linear-gradient(90deg, rgba(254,253,228,1) 100%, rgba(255,255,255,1) 100%);
-background: -webkit-linear-gradient(90deg, rgba(254,253,228,1) 100%, rgba(255,255,255,1) 100%);
-background: linear-gradient(90deg, rgba(254,253,228,1) 100%, rgba(255,255,255,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fefde4",endColorstr="#ffffff",GradientType=1);
+  background: rgb(217,237,240);
+  background: -moz-linear-gradient(90deg, rgba(217,237,240,1) 100%, rgba(217,237,240,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(217,237,240,1) 100%, rgba(217,237,240,1) 100%);
+  background: linear-gradient(90deg, rgba(217,237,240,1) 100%, rgba(217,237,240,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d9edf0",endColorstr="#d9edf0",GradientType=1);
 
 
   cursor: none;
@@ -19,18 +19,26 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fefde4",endCo
  
 .nav-link {
   font-size: 25px;
-  position: relative;
+  /*margin-top: 2vh;*/
+  position: fixed;
   text-decoration: none;
- background: rgb(253,255,237);
-background: -moz-linear-gradient(90deg, rgba(253,255,237,1) 100%, rgba(253,255,237,1) 100%);
-background: -webkit-linear-gradient(90deg, rgba(253,255,237,1) 100%, rgba(253,255,237,1) 100%);
-background: linear-gradient(90deg, rgba(253,255,237,1) 100%, rgba(253,255,237,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fdffed",endColorstr="#fdffed",GradientType=1);
+  /*border:  2px solid #000000;*/
+  background: rgb(217,237,240);
+  background: -moz-linear-gradient(90deg, rgba(217,237,240,1) 100%, rgba(217,237,240,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(217,237,240,1) 100%, rgba(217,237,240,1) 100%);
+  background: linear-gradient(90deg, rgba(217,237,240,1) 100%, rgba(217,237,240,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d9edf0",endColorstr="#d9edf0",GradientType=1);
   color: #fff;
   padding: 10px;
   overflow: hidden;
   display: flex; /* Added to use flexbox */
   justify-content: flex-end; /* Move the nav bar to the right */
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure the navigation bar is above other elements */
 }
 
 .nav-link::before {
@@ -65,17 +73,36 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fdffed",endCo
   border-bottom: 3px solid transparent;
   color: #000000;
   text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+.nav-link-ul li a::before{ 
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0; /* Initially no width */
+  height: 2px; /* Height of the underline */
+  background-color: #000000; /* Change the color as needed */
+  transition: width 0.5s ease-in-out; /* Transition for the width property */
+}
+
+
+.nav-link-ul li a:hover::before{  
+  width: 100%;
 }
 
 .container {
   max-width: 800px;
   margin: 50px auto;
   padding: 20px;
-  background: rgb(253,255,237);
-background: -moz-linear-gradient(90deg, rgba(253,255,237,1) 100%, rgba(253,255,237,1) 100%);
-background: -webkit-linear-gradient(90deg, rgba(253,255,237,1) 100%, rgba(253,255,237,1) 100%);
-background: linear-gradient(90deg, rgba(253,255,237,1) 100%, rgba(253,255,237,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fdffed",endColorstr="#fdffed",GradientType=1);
+  background-color: #ffffff;
+ /* background: rgb(192,192,192);
+  background: -moz-linear-gradient(90deg, rgba(192,192,192,1) 100%, rgba(192,192,192,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(192,192,192,1) 100%, rgba(192,192,192,1) 100%);
+  background: linear-gradient(90deg, rgba(192,192,192,1) 100%, rgba(192,192,192,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c0c0c0",endColorstr="#c0c0c0",GradientType=1);*/
 
 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -84,20 +111,67 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fdffed",endCo
 
 .name-title{
   font-size: 20px;
-  max-width: 800px;
+  max-width: 700px;
   margin: 50px auto;
   padding: 20px;
   
-  background: rgb(254,253,228);
-background: -moz-linear-gradient(90deg, rgba(254,253,228,1) 100%, rgba(255,255,255,1) 100%);
-background: -webkit-linear-gradient(90deg, rgba(254,253,228,1) 100%, rgba(255,255,255,1) 100%);
-background: linear-gradient(90deg, rgba(254,253,228,1) 100%, rgba(255,255,255,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fefde4",endColorstr="#ffffff",GradientType=1);
+   background: rgb(220,220,220);
+  background: -moz-linear-gradient(90deg, rgba(220,220,220,1) 100%, rgba(220,220,220,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(220,220,220,1) 100%, rgba(220,220,220,1) 100%);
+  background: linear-gradient(90deg, rgba(220,220,220,1) 100%, rgba(220,220,220,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dcdcdc",endColorstr="#dcdcdc",GradientType=1);
 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center; /* Center align the contents of the container */
 }
 
+.name-title-projects{
+  font-size: 20px;
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 20px;
+  
+   background: rgb(220,220,220);
+  background: -moz-linear-gradient(90deg, rgba(220,220,220,1) 100%, rgba(220,220,220,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(220,220,220,1) 100%, rgba(220,220,220,1) 100%);
+  background: linear-gradient(90deg, rgba(220,220,220,1) 100%, rgba(220,220,220,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dcdcdc",endColorstr="#dcdcdc",GradientType=1);
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center align the contents of the container */
+}
+
+.toc-projects{
+  list-style-type: none;
+}
+
+.toc-projects li{
+  margin-bottom: 2vh;
+}
+
+.project-link{
+  color: #000000;
+  font-size: 22px;
+  padding: 5px 0px;
+  display: inline-block;
+  position: relative;
+}
+
+.project-link::before{ 
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0; /* Initially no width */
+  height: 2px; /* Height of the underline */
+  background-color: #000000; /* Change the color as needed */
+  transition: width 0.5s ease-in-out; /* Transition for the width property */
+}
+
+
+.project-link:hover::before{  
+  width: 100%;
+}
 .container h1 {
   margin-bottom: 20px;
 }
@@ -156,7 +230,7 @@ button:hover {
 #back-to-top {
   position: fixed;
   bottom: 5vh; /* Adjust the vertical position based on the device height */
-  right: 5vw; /* Adjust the horizontal position based on the device width */
+  right: 10vw; /* Adjust the horizontal position based on the device width */
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -176,6 +250,43 @@ button:hover {
   background-color: #555;
 }
 
+/* Contact Logos */
+.contact-logos {
+  position: fixed;
+  bottom: 5vh;
+  left: 5vw;
+  display: flex;
+}
+
+.logo-link {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px; /* Add some spacing between the logos */
+  border-radius: 50%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  line-height: 40px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.logo-link i {
+  transition: color 0.3s;
+}
+
+.logo-link:hover {
+  background-color: #555;
+}
+
+.logo-link:hover i {
+  color: #fff;
+}
+
 .project-title{
   /*font-family: 'Trebuchet MS', sans-serif;*/
 }
@@ -183,14 +294,14 @@ button:hover {
 .cursor {
   position: fixed;
   z-index: 9999;
-  background: #2696E8;
+  background: #31484B;
   width: 20px;
   height: 20px;
   border-radius: 50%;
   pointer-events: none;
-  box-shadow: 0 0 20px #2696E8,
-              0 0 60px #2696E8,
-              0 0 100px #2696E8;
+  box-shadow: 0 0 20px #31484B,
+              0 0 60px #31484B,
+              0 0 100px #31484B;
   animation: colors 5s infinite;
   transform: translate(-50%, -50%);
   display: none;
@@ -208,7 +319,7 @@ button:hover {
 .cursor:before {
   content: '';
   position: absolute;
-  background: #2696E8;
+  background: #31484B;
   width: 50px;
   height: 50px;
   opacity: 0.2;
@@ -227,14 +338,15 @@ button:hover {
 .dark-mode-toggle {
   position: relative;
   display: inline-block;
+  margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
   cursor: pointer;
   /* Added styles to make the toggle button more prominent */
   width: 60px;
-  height: 40px;
+  height: 34px;
   background-color: #ccc;
-  border-radius: 40px;
+  border-radius: 34px;
 }
 
 .dark-mode-toggle input[type="checkbox"] {
@@ -263,3 +375,89 @@ button:hover {
   /* Adjusted the translation to keep the slider centered */
   transform: translateX(30px);
 }
+
+/* Your existing CSS styles */
+
+
+/*
+PROJECTS 
+*/
+
+/*ENTERPRISE DETAILS*/
+.enterprise-details{
+  display: none;
+}
+.enterprise-details.show {
+  display: block;
+}
+
+.delhi-details{
+  display: none;
+}
+.delhi-details.show {
+  display: block;
+}
+
+.zivame-details{
+  display: none;
+}
+.zivame-details.show {
+  display: block;
+}
+
+.deutsch-details{
+  display: none;
+}
+.deutsch-details.show {
+  display: block;
+}
+
+.sudoku-details{
+  display: none;
+}
+.sudoku-details.show {
+  display: block;
+}
+
+.wordle-details{
+  display: none;
+}
+.wordle-details.show {
+  display: block;
+}
+
+.calculator-details{
+  display: none;
+}
+.calculator-details.show {
+  display: block;
+}
+
+.epicroute-details{
+  display: none;
+}
+.epicroute-details.show {
+  display: block;
+}
+
+
+
+.read-more-button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.read-more-button:hover {
+  background-color: #555;
+}
+
+/* Styles for hiding the button */
+.read-more-button.hidden {
+  display: none;
+}
+
+

@@ -46,8 +46,6 @@
         </ul>
       </div>
     </div>
-
-
     <div class="enterprise-section" id="enterprise">
       <h2>Enterprise Management System</h2>
       <p>A spring boot project that serves as a robust Enterprise Management System, providing RESTful APIs to perform CRUD operations.</p>
@@ -55,26 +53,19 @@
       <p>The project thoroughly uses the Controller, Service, DAO and DTO architecture.</p>
       <p>Includes functionalities like Security and Authentication, Data Validation, Exception Handling, Custom Responses for API clients like Postman and Browsers, ManyToOne and OneToMany mapping of entities, Pagination and Sorting and more...</p>
 
-      <button class="read-more-button">Read More</button>
-
-      <div class="enterprise-details additional-info">
+      <div class="enterprise-details">
         <img src="C:\Users\sarth\Projects\portfolio\assets\enterprise\customerView.png" alt="Enterprise Image 1" />
         <p></p>
-
-        <button class="less-button">Less</button>
-
       </div>
     </div>
 
 
     <div class="delhi-section" id="delhi">
       <h2>Delhi Metro - Shortest Route Finder</h2>
-      <p>The Delhi Metro Shortest Route Finder is a web-based application built using JavaScript and React, designed to help commuters efficiently navigate the complex Delhi Metro network with its intricate interchanges. The application utilizes Dijkstra's algorithm, a widely-used graph traversal algorithm, to find the shortest route between two stations, ensuring optimal travel time and convenience.</p>
 
-      <button class="read-more-button">Read More</button>
-      <div class="delhi-details additional-info">
+      <div class="delhi-details">
         <img src="C:\Users\sarth\Projects\portfolio\assets\delhi\interface.png" alt="Delhi Image 1" />
-        
+        <p>The Delhi Metro Shortest Route Finder is a web-based application built using JavaScript and React, designed to help commuters efficiently navigate the complex Delhi Metro network with its intricate interchanges. The application utilizes Dijkstra's algorithm, a widely-used graph traversal algorithm, to find the shortest route between two stations, ensuring optimal travel time and convenience.</p>
         <p></p>
         <p>Key Features:</p>
         <ul>
@@ -85,18 +76,17 @@
             <p>In instances where multiple routes are available, the application presents alternate options to users. Additionally, it provides essential information about complex interchanges, helping commuters navigate these areas seamlessly.</p>
           </li>
         </ul>
-        <button class="less-button">Less</button>
       </div>
     </div>
 
+
     <div class="zivame-section" id="zivame">
       <h2>Web Scraping Prototype - Zivame.com</h2>
-      <p>The Automated Web Scraping Prototype is a Python-based solution that streamlines the process of fetching and exporting description details from various websites. Leveraging powerful frameworks such as Selenium, Pandas, Beautiful Soup, and Webdriver, the project automates data extraction and conversion to a CSV format, significantly reducing manual effort by almost 90%.</p>
 
-      <button class="read-more-button">Read More</button>
-
-      <div class="zivame-details additional-info">
+      <div class="zivame-details">
         <img src="enterprise1.jpg" alt="Enterprise Image 1" />
+        <p>The Automated Web Scraping Prototype is a Python-based solution that streamlines the process of fetching and exporting description details from various websites. Leveraging powerful frameworks such as Selenium, Pandas, Beautiful Soup, and Webdriver, the project automates data extraction and conversion to a CSV format, significantly reducing manual effort by almost 90%.</p>
+        <p></p>
         <ul>
           <li>Efficient Web Scraping
             <p>The prototype employs Selenium and Webdriver to simulate a web browser, enabling dynamic loading of pages with JavaScript-rendered content. This ensures that even websites utilizing AJAX and client-side rendering can be efficiently scraped.</p>
@@ -108,20 +98,17 @@
             <p>The project is designed to be scalable and modular, capable of handling multiple sources and websites simultaneously. Clients can easily extend the solution to include additional websites or data fields as needed.</p>
           </li>
         </ul>
-
-        <button class="less-button">Less</button>
-
       </div>
     </div>
 
 
     <div class="deutsch-section" id="deutsch">
       <h2>Deutsch101.ca - German Classes Website</h2>
-      <p>The Website for German Classes, hosted by your aunt, is a comprehensive online platform built to provide a seamless learning experience for students interested in mastering the German language. Developed using HTML, CSS, and JavaScript, the website incorporates cutting-edge technologies and leverages the power of Node.js for hosting.</p>
 
-      <button class="read-more-button">Read More</button>
-      <div class="deutsch-details additional-info">
+      <div class="deutsch-details">
         <img src="C:\Users\sarth\Projects\portfolio\assets\deutsch\home.png" alt="Enterprise Image 1" />
+        <p>The Website for German Classes, hosted by your aunt, is a comprehensive online platform built to provide a seamless learning experience for students interested in mastering the German language. Developed using HTML, CSS, and JavaScript, the website incorporates cutting-edge technologies and leverages the power of Node.js for hosting.</p>
+        <p></p>
         <ul>
             <li>Google OAuth 2.0 API Integration
               <p>The website implements Google's OAuth 2.0 API to facilitate user authentication. This allows users to log in using their Google accounts, ensuring convenience and enhanced security.</p>
@@ -130,18 +117,16 @@
               <p>The website features a user-friendly "Contact Me" form, enabling seamless communication between students and instructors. The integration of the Gmail API ensures that messages from the form are efficiently delivered to your aunt's email address.</p>
             </li>
           </ul>
-        <button class="less-button">Less</button>
       </div>
     </div>
 
+
     <div class="sudoku-section" id="sudoku">
       <h2>Sudoku Solver</h2>
-      <p>The Sudoku Solver and Automation project is an impressive Python-based application that tackles Sudoku puzzles of any difficulty level with remarkable efficiency. Powered by the Backtracking algorithm, the solver skillfully navigates through the intricacies of the puzzle to find the correct solution.</p>
-
-      <button class="read-more-button">Read More</button>
-
-      <div class="sudoku-details additional-info">
+      <div class="sudoku-details">
         <img src="C:\Users\sarth\Projects\portfolio\assets\deutsch\home.png" alt="Enterprise Image 1" />
+        <p>The Sudoku Solver and Automation project is an impressive Python-based application that tackles Sudoku puzzles of any difficulty level with remarkable efficiency. Powered by the Backtracking algorithm, the solver skillfully navigates through the intricacies of the puzzle to find the correct solution.</p>
+        <p></p>
         <ul>
             <li>Selenium Automation
               <p>The project leverages Selenium, a popular web automation tool, to interact with the website https://grid.websudoku.com/?level=4. Selenium automates the Sudoku puzzle generation process by scraping a problem from the website, feeding it to the solver, and subsequently displaying the solution on the website.</p>
@@ -150,23 +135,16 @@
               <p>Upon successful completion of the puzzle-solving process, the solution is instantly displayed on the website, giving users immediate feedback on their queries. This real-time output enhances the user experience and promotes efficient puzzle-solving.</p>
             </li>
           </ul>
-
-        <button class="less-button">Less</button>
-
       </div>
     </div>
 
 
     <div class="wordle-section" id="wordle">
       <h2>Wordle Solver</h2>
-      <p>The Wordle Game Solver is an innovative Python-based project designed to tackle the popular Wordle game with exceptional efficiency. Employing a custom algorithm, the solver adeptly solves 4, 5, and 6-letter wordles, providing accurate answers in an average of 3.4 tries.</p>
-
-      <button class="read-more-button">Read More</button>
-      <div class="wordle-details additional-info">
+      <div class="wordle-details">
         <img src="C:\Users\sarth\Projects\portfolio\assets\deutsch\home.png" alt="Enterprise Image 1" />
-        
+        <p>The Wordle Game Solver is an innovative Python-based project designed to tackle the popular Wordle game with exceptional efficiency. Employing a custom algorithm, the solver adeptly solves 4, 5, and 6-letter wordles, providing accurate answers in an average of 3.4 tries.</p>
         <p></p>
-        <p>Key Features:</p>
         <ul>
             <li>Efficient Guessing
               <p>The algorithm employs a strategic approach to make intelligent guesses based on the limited information provided by the game. By analyzing the feedback from each guess, the solver dynamically adapts its subsequent attempts, significantly reducing the number of trials required to arrive at the correct word.</p>
@@ -175,9 +153,9 @@
               <p>Upon successful completion of the puzzle-solving process, the solution is instantly displayed on the website, giving users immediate feedback on their queries. This real-time output enhances the user experience and promotes efficient puzzle-solving.</p>
             </li>
           </ul>
-        <button class="less-button">Less</button>
       </div>
     </div>
+
 
     <div class="calculator-section" id="calculator">
       <h2>Calculator.js</h2>
@@ -186,43 +164,42 @@
       <p>The project thoroughly uses the Controller, Service, DAO and DTO architecture.</p>
       <p>Includes functionalities like Security and Authentication, Data Validation, Exception Handling, Custom Responses for API clients like Postman and Browsers, ManyToOne and OneToMany mapping of entities, Pagination and Sorting and more...</p>
 
-      <button class="read-more-button">Read More</button>
-
-      <div class="calculator-details additional-info">
-        <img src="C:\Users\sarth\Projects\portfolio\assets\enterprise\customerView.png" alt="Enterprise Image 1" />
-        <p></p>
-
-        <button class="less-button">Less</button>
-
+      <div class="calculator-details">
+        <img src="enterprise1.jpg" alt="Enterprise Image 1" />
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <img src="enterprise2.jpg" alt="Enterprise Image 2" />
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <!-- You can add more content, such as more images or descriptions, here -->
       </div>
     </div>
 
 
     <div class="epicroute-section" id="epicroute">
       <h2>Epic Route Solutions - Website for a Marketing company</h2>
-      <p>The Delhi Metro Shortest Route Finder is a web-based application built using JavaScript and React, designed to help commuters efficiently navigate the complex Delhi Metro network with its intricate interchanges. The application utilizes Dijkstra's algorithm, a widely-used graph traversal algorithm, to find the shortest route between two stations, ensuring optimal travel time and convenience.</p>
+      <p>A spring boot project that serves as a robust Enterprise Management System, providing RESTful APIs to perform CRUD operations.</p>
+      <p>Built with ORM tools like Hibernate and JPA, used JWT and Auth 2.0 for authentication, JDBC connection with MySQL.</p>
+      <p>The project thoroughly uses the Controller, Service, DAO and DTO architecture.</p>
+      <p>Includes functionalities like Security and Authentication, Data Validation, Exception Handling, Custom Responses for API clients like Postman and Browsers, ManyToOne and OneToMany mapping of entities, Pagination and Sorting and more...</p>
 
-      <button class="read-more-button">Read More</button>
-      <div class="epicroute-details additional-info">
-        <img src="C:\Users\sarth\Projects\portfolio\assets\delhi\interface.png" alt="Delhi Image 1" />
-        
-        <p></p>
-        <p>Key Features:</p>
-        <ul>
-          <li>User Friendly Interface
-            <p>The application boasts an intuitive and user-friendly interface, allowing commuters to easily input their desired source and destination stations. The interface is designed to accommodate even those less familiar with the Delhi Metro's extensive network.</p>
-          </li>
-          <li>Alternate Routes and Interchange Information
-            <p>In instances where multiple routes are available, the application presents alternate options to users. Additionally, it provides essential information about complex interchanges, helping commuters navigate these areas seamlessly.</p>
-          </li>
-        </ul>
-        <button class="less-button">Less</button>
+      <div class="epicroute-details">
+        <img src="C:\Users\sarth\Projects\portfolio\assets\epic\home.png" alt="Enterprise Image 1" />
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <img src="enterprise2.jpg" alt="Enterprise Image 2" />
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <p>Additional text and details about Project 1.</p>
+        <!-- You can add more content, such as more images or descriptions, here -->
       </div>
-    </div>
-
-
-
-    
     </div>
   </div>
   <script type="text/javascript" src="script.js"></script>

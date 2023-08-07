@@ -1,4 +1,6 @@
 // script.js
+// alert("Hello! I am an alert box!!");
+
 
 // Function to center the cursor on the screen
 function centerCursor() {
@@ -78,7 +80,7 @@ backToTop.addEventListener('click', (event) => {
 });
 
 const projectLinks = document.querySelectorAll(".project-link");
-const offset = 20; // Adjust the offset value as needed
+const offset = 53; // Adjust the offset value as needed
 
 projectLinks.forEach((link) => {
   link.addEventListener("click", (event) => {
@@ -96,16 +98,37 @@ projectLinks.forEach((link) => {
   });
 });
 
-const darkModeToggle = document.getElementById('dark-mode-checkbox');
-const body = document.body;
+// const darkModeToggle = document.getElementById('dark-mode-checkbox');
+// const body = document.body;
 
-function toggleDarkMode() {
-  if (darkModeToggle.checked) {
-    body.classList.add('dark-mode');
-  } else {
-    body.classList.remove('dark-mode');
-  }
-}
+// function toggleDarkMode() {
+//   if (darkModeToggle.checked) {
+//     body.classList.add('dark-mode');
+//   } else {
+//     body.classList.remove('dark-mode');
+//   }
+// }
 
-darkModeToggle.addEventListener('change', toggleDarkMode);
+// darkModeToggle.addEventListener('change', toggleDarkMode);
+
+const readMoreButtons = document.querySelectorAll('.read-more-button');
+const lessButtons = document.querySelectorAll('.less-button');
+const additionalInfo = document.querySelectorAll('.additional-info'); // Use a class for all additional info sections
+
+// Loop through each button and add click event listeners
+readMoreButtons.forEach((button, index) => {
+  button.addEventListener('click', () => {
+    additionalInfo[index].classList.add('show');
+    button.classList.add('hidden');
+  });
+});
+
+// Loop through each "Less" button and add click event listeners
+lessButtons.forEach((button, index) => {
+  button.addEventListener('click', () => {
+    additionalInfo[index].classList.remove('show');
+    readMoreButtons[index].classList.remove('hidden');
+  });
+});
+
 
