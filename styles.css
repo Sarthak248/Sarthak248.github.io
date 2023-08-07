@@ -19,7 +19,7 @@ body {
  
 .nav-link {
   font-size: 25px;
-  /*margin-top: 2vh;*/
+  /*margin-bottom: 5vh;*/
   position: fixed;
   text-decoration: none;
   /*border:  2px solid #000000;*/
@@ -29,7 +29,7 @@ body {
   background: linear-gradient(90deg, rgba(217,237,240,1) 100%, rgba(217,237,240,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d9edf0",endColorstr="#d9edf0",GradientType=1);
   color: #fff;
-  padding: 10px;
+  padding: 3vh;
   overflow: hidden;
   display: flex; /* Added to use flexbox */
   justify-content: flex-end; /* Move the nav bar to the right */
@@ -66,7 +66,7 @@ body {
 
 .nav-link-ul li {
   display: inline;
-  margin-right: 20px;
+  margin-right: 5vh;
 }
 
 .nav-link-ul li a {
@@ -460,4 +460,110 @@ PROJECTS
   display: none;
 }
 
+.resume-container {
+  text-align: center;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+ /* background: rgb(192,192,192);
+  background: -moz-linear-gradient(90deg, rgba(192,192,192,1) 100%, rgba(192,192,192,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(192,192,192,1) 100%, rgba(192,192,192,1) 100%);
+  background: linear-gradient(90deg, rgba(192,192,192,1) 100%, rgba(192,192,192,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c0c0c0",endColorstr="#c0c0c0",GradientType=1);*/
 
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /*text-align: center;  Center align the contents of the container */
+}
+
+.resume-link{
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  font-size: 3vh;
+  padding: 5px 0px;
+  display: inline-block;
+  position: relative;
+}
+
+.resume-link::before{ 
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0; /* Initially no width */
+  height: 2px; /* Height of the underline */
+  background-color: #000000; /* Change the color as needed */
+  transition: width 0.5s ease-in-out; /* Transition for the width property */
+}
+
+
+.resume-link:hover::before{  
+  width: 100%;
+}
+
+
+.education{
+  font-size: 20px;
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 20px;
+  
+   background: rgb(220,220,220);
+  background: -moz-linear-gradient(90deg, rgba(220,220,220,1) 100%, rgba(220,220,220,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(220,220,220,1) 100%, rgba(220,220,220,1) 100%);
+  background: linear-gradient(90deg, rgba(220,220,220,1) 100%, rgba(220,220,220,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dcdcdc",endColorstr="#dcdcdc",GradientType=1);
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center align the contents of the container */
+}
+
+.experience{
+  font-size: 20px;
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 20px;
+  
+   background: rgb(220,220,220);
+  background: -moz-linear-gradient(90deg, rgba(220,220,220,1) 100%, rgba(220,220,220,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(220,220,220,1) 100%, rgba(220,220,220,1) 100%);
+  background: linear-gradient(90deg, rgba(220,220,220,1) 100%, rgba(220,220,220,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dcdcdc",endColorstr="#dcdcdc",GradientType=1);
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center align the contents of the container */
+}
+
+.skills{
+  font-size: 20px;
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 20px;
+  
+   background: rgb(220,220,220);
+  background: -moz-linear-gradient(90deg, rgba(220,220,220,1) 100%, rgba(220,220,220,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(220,220,220,1) 100%, rgba(220,220,220,1) 100%);
+  background: linear-gradient(90deg, rgba(220,220,220,1) 100%, rgba(220,220,220,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dcdcdc",endColorstr="#dcdcdc",GradientType=1);
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center align the contents of the container */
+}
+
+.interests{
+  font-size: 20px;
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 20px;
+  
+   background: rgb(220,220,220);
+  background: -moz-linear-gradient(90deg, rgba(220,220,220,1) 100%, rgba(220,220,220,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(220,220,220,1) 100%, rgba(220,220,220,1) 100%);
+  background: linear-gradient(90deg, rgba(220,220,220,1) 100%, rgba(220,220,220,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dcdcdc",endColorstr="#dcdcdc",GradientType=1);
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center align the contents of the container */
+}
