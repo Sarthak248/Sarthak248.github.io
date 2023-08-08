@@ -80,7 +80,7 @@ backToTop.addEventListener('click', (event) => {
 });
 
 const projectLinks = document.querySelectorAll(".project-link");
-const offset = 53; // Adjust the offset value as needed
+const offset = 55; // Adjust the offset value as needed
 
 projectLinks.forEach((link) => {
   link.addEventListener("click", (event) => {

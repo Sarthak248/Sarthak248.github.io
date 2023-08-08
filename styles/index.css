@@ -1,0 +1,35 @@
+/* Index.css */
+.index-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /*text-align: center;  Center align the contents of the container */
+}
+
+.name-title{
+  font-size: 20px;
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 20px;
+  margin-bottom: 20px;
+  
+   background: rgb(220,220,220);
+  background: -moz-linear-gradient(90deg, rgba(220,220,220,1) 100%, rgba(220,220,220,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(220,220,220,1) 100%, rgba(220,220,220,1) 100%);
+  background: linear-gradient(90deg, rgba(220,220,220,1) 100%, rgba(220,220,220,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dcdcdc",endColorstr="#dcdcdc",GradientType=1);
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center align the contents of the container */
+}
+
+.index-container h1 {
+  margin-bottom: 20px;
+}
+
+.index-container p {
+  line-height: 1.6;
+}

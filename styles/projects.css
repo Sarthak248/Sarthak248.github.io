@@ -1,0 +1,161 @@
+/* projects.css */
+
+.project-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.name-title-projects{
+  font-size: 20px;
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 20px;
+  margin-bottom: 20px;
+  
+  background: rgb(220,220,220);
+  background: -moz-linear-gradient(90deg, rgba(220,220,220,1) 100%, rgba(220,220,220,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(220,220,220,1) 100%, rgba(220,220,220,1) 100%);
+  background: linear-gradient(90deg, rgba(220,220,220,1) 100%, rgba(220,220,220,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dcdcdc",endColorstr="#dcdcdc",GradientType=1);
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center align the contents of the container */
+}
+
+.toc-projects{
+  list-style-type: none;
+}
+
+.toc-projects li{
+  margin-bottom: 2vh;
+}
+
+.project-link{
+  color: #000000;
+  font-size: 22px;
+  padding: 5px 0px;
+  display: inline-block;
+  position: relative;
+}
+
+.project-link::before{ 
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0; /* Initially no width */
+  height: 2px; /* Height of the underline */
+  background-color: #000000; /* Change the color as needed */
+  transition: width 0.5s ease-in-out; /* Transition for the width property */
+}
+
+
+.project-link:hover::before{  
+  width: 100%;
+}
+.project-container h1 {
+  margin-bottom: 20px;
+}
+
+.project-container p {
+  line-height: 1.6;
+}
+
+.project-section {
+  margin-top: 30px;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+.toc{
+ /**/ 
+}
+
+.enterprise-details{
+  display: none;
+}
+.enterprise-details.show {
+  display: block;
+}
+
+.delhi-details{
+  display: none;
+}
+.delhi-details.show {
+  display: block;
+}
+
+.zivame-details{
+  display: none;
+}
+.zivame-details.show {
+  display: block;
+}
+
+.deutsch-details{
+  display: none;
+}
+.deutsch-details.show {
+  display: block;
+}
+
+.sudoku-details{
+  display: none;
+}
+.sudoku-details.show {
+  display: block;
+}
+
+.wordle-details{
+  display: none;
+}
+.wordle-details.show {
+  display: block;
+}
+
+.calculator-details{
+  display: none;
+}
+.calculator-details.show {
+  display: block;
+}
+
+.epicroute-details{
+  display: none;
+}
+.epicroute-details.show {
+  display: block;
+}
+
+.read-more-button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.read-more-button:hover {
+  background-color: #555;
+}
+
+.less-button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.less-button:hover {
+  background-color: #555;
+}
+
+.read-more-button.hidden {
+  display: none;
+}

@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sarthak Jain - Contact Me</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles\styles.css">
+  <link rel="stylesheet" href="styles\contact.css">
   <link rel = "icon" href ="assets\images\S.png" 
         type = "image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -25,22 +26,22 @@
   
   <a href="#" id="back-to-top" title="Back to Top"><i class='fas fa-arrow-alt-circle-up'></i></a>
   <div class="contact-logos">
-    <a href="https://www.linkedin.com/in/sarthakjain248/" class="logo-link"><i class="fa fa-linkedin"></i></a>
-    <a href="https://github.com/Sarthak248?tab=repositories" class="logo-link"><i class="fa fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/sarthakjain248/" target="_blank" class="logo-link"><i class="fa fa-linkedin"></i></a>
+    <a href="https://github.com/Sarthak248?tab=repositories" target="_blank" class="logo-link"><i class="fa fa-github"></i></a>
     <a href="mailto:sartha24champ@gmail.com" class="logo-link"><i class="fa fa-envelope"></i></a>
-    <a href="https://www.instagram.com/sarthak_jain_248/" class="logo-link"><i class="fa fa-instagram"></i></a>
+    <a href="https://www.instagram.com/sarthak_jain_248/" target="_blank" class="logo-link"><i class="fa fa-instagram"></i></a>
   </div>
 
-  <div class="container">
+  <div class="contact-container">
     <h1>Contact Me</h1>
-    <form action="#" method="POST">
-      <label for="name">Name:</label>
+    <form class="contact-form" action="#" method="POST">
+      <label class="name-label" for="name">Name:</label>
       <input type="text" id="name" name="name" required>
-      <label for="email">Email:</label>
+      <label class="email-label" for="email">Email:</label>
       <input type="email" id="email" name="email" required>
-      <label for="message">Message:</label>
+      <label class="msg-label" for="message">Message:</label>
       <textarea id="message" name="message" rows="4" required></textarea>
-      <button type="submit">Send Message</button>
+      <button class="contact-submit-btn" type="submit">Send Message</button>
     </form>
   </div>
   <script type="text/javascript" src="script.js"></script>
