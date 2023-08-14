@@ -1,6 +1,13 @@
 // script.js
 // alert("Hello! I am an alert box!!");
 
+// function loadGoogleForm() {
+//     const googleFormContainer = document.getElementById("google-form");
+//     googleFormContainer.innerHTML = `
+//       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdxUUnogm_tfphi6WmA-5W1jgjdBgOwRwjiwIWiig24PiqOEA/viewform?embedded=true" width="640" height="661" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+//     `;
+//   }
+// loadGoogleForm();
 
 // Function to center the cursor on the screen
 function centerCursor() {
@@ -80,7 +87,7 @@ backToTop.addEventListener('click', (event) => {
 });
 
 const projectLinks = document.querySelectorAll(".project-link");
-const offset = 55; // Adjust the offset value as needed
+const offset = 75; // Adjust the offset value as needed
 
 projectLinks.forEach((link) => {
   link.addEventListener("click", (event) => {
@@ -130,5 +137,4 @@ lessButtons.forEach((button, index) => {
     readMoreButtons[index].classList.remove('hidden');
   });
 });
-
 
