@@ -1,16 +1,8 @@
-/* styles.css */
-/* Hide the default scrollbar */
-::-webkit-scrollbar {
-  width: 0.5em; /* Adjust width as needed to make scrollbar invisible */
-}
-
-/* Track */
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey; /* Add some style to the scrollbar track */
   border-radius: 10px; /* Add border radius for aesthetics */
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background-color: darkgrey; /* Color of the scrollbar thumb */
   border-radius: 10px; /* Rounded corners for the scrollbar thumb */
@@ -19,12 +11,11 @@
 body {
   margin: 0;
   font-family: 'Trebuchet MS', sans-serif;
-  background-image: url("../assets/images/bg1.png");
-  /*background: rgb(217,237,240);
+  background: rgb(217,237,240);
   background: -moz-linear-gradient(90deg, rgba(217,237,240,1) 100%, rgba(217,237,240,1) 100%);
   background: -webkit-linear-gradient(90deg, rgba(217,237,240,1) 100%, rgba(217,237,240,1) 100%);
   background: linear-gradient(90deg, rgba(217,237,240,1) 100%, rgba(217,237,240,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d9edf0",endColorstr="#d9edf0",GradientType=1);*/
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d9edf0",endColorstr="#d9edf0",GradientType=1);
 
 
   cursor: none;
@@ -33,21 +24,20 @@ body {
   /* Additional styles for the link */
   scroll-behavior: smooth;
 }
- 
+
 .nav-link {
   font-size: 25px;
   /*margin-bottom: 5vh;*/
   position: fixed;
   text-decoration: none;
   /*border:  2px solid #000000;*/
-  background: ##000057;
-  /*background: rgb(217,237,240);
+  background: rgb(217,237,240);
   background: -moz-linear-gradient(90deg, rgba(217,237,240,1) 100%, rgba(217,237,240,1) 100%);
   background: -webkit-linear-gradient(90deg, rgba(217,237,240,1) 100%, rgba(217,237,240,1) 100%);
   background: linear-gradient(90deg, rgba(217,237,240,1) 100%, rgba(217,237,240,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d9edf0",endColorstr="#d9edf0",GradientType=1);*/
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d9edf0",endColorstr="#d9edf0",GradientType=1);
   color: #fff;
-  padding: 5vh;
+  padding: 3vh;
   overflow: hidden;
   display: flex; /* Added to use flexbox */
   justify-content: flex-end; /* Move the nav bar to the right */
@@ -59,37 +49,9 @@ body {
   z-index: 1000; /* Ensure the navigation bar is above other elements */
 }
 
-.nav-link::before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  visibility: hidden;
-  transform-origin: left;
-  transition: width 0.3s;
-}
-
-.nav-link:hover::before {
-  visibility: visible;
-  width: 100%;
-}
-
-.nav-link-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-link-ul li {
-  display: inline;
-  margin-right: 5vh;
-}
-
 .nav-link-ul li a {
   border-bottom: 3px solid transparent;
-  color: #fff;
+  color: #000000;
   text-decoration: none;
   display: inline-block;
   position: relative;
@@ -102,32 +64,10 @@ body {
   bottom: -5px;
   width: 0; /* Initially no width */
   height: 2px; /* Height of the underline */
-  background-color: #fff; /* Change the color as needed */
+  background-color: #000000; /* Change the color as needed */
   transition: width 0.5s ease-in-out; /* Transition for the width property */
 }
 
-
-.nav-link-ul li a:hover::before{  
-  width: 100%;
-}
-
-/*.container {
-  max-width: 800px;
-  margin: 50px auto;
-  padding: 20px;
-  background-color: #ffffff;
-  background: rgb(192,192,192);
-  background: -moz-linear-gradient(90deg, rgba(192,192,192,1) 100%, rgba(192,192,192,1) 100%);
-  background: -webkit-linear-gradient(90deg, rgba(192,192,192,1) 100%, rgba(192,192,192,1) 100%);
-  background: linear-gradient(90deg, rgba(192,192,192,1) 100%, rgba(192,192,192,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c0c0c0",endColorstr="#c0c0c0",GradientType=1);
-
-
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  /*text-align: center;  Center align the contents of the container 
-}*/
-
-/* Styles for the "Back to Top" link */
 #back-to-top {
   position: fixed;
   bottom: 5vh; /* Adjust the vertical position based on the device height */
@@ -151,14 +91,6 @@ body {
   background-color: #555;
 }
 
-/* Contact Logos */
-.contact-logos {
-  position: fixed;
-  bottom: 5vh;
-  left: 5vw;
-  display: flex;
-}
-
 .logo-link {
   width: 40px;
   height: 40px;
@@ -174,10 +106,6 @@ body {
   justify-content: center;
   align-items: center;
   transition: background-color 0.3s;
-}
-
-.logo-link i {
-  transition: color 0.3s;
 }
 
 .logo-link:hover {
@@ -224,9 +152,6 @@ body {
   border-radius: 50%;
 }
 
-/* Your existing CSS styles */
-
-/* Dark Mode Toggle Button */
 .dark-mode-toggle {
   position: relative;
   display: inline-block;
@@ -263,7 +188,9 @@ body {
   box-shadow: 0 0 8px rgba(33, 150, 243, 0.5);
 }
 
-.dark-mode-toggle input[type="checkbox"]:checked + .dark-mode-slider:before {
-  /* Adjusted the translation to keep the slider centered */
-  transform: translateX(30px);
-}
+
+
+
+
+
+
